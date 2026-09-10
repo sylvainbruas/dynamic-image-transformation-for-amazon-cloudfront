@@ -298,7 +298,7 @@ async function awaitEcsReady(region: string): Promise<void> {
   const ecs = new ECSClient({ region });
 
   const freshnessFloorMs = provisionedAtMs ?? 0;
-  const totalRetries = 36;            // up to 36 * 15s = 9 min, inside the 15-min task timeout
+  const totalRetries = 48;            // up to 48 * 15s = 12 min, inside the 15-min task timeout
   const retryIntervalMs = 15_000;
 
   // Log the floor up front — an instant pass or an UNSET floor (provisioning never ran) is then
@@ -339,6 +339,11 @@ async function awaitEcsReady(region: string): Promise<void> {
         `${((Date.now() - pollStartMs) / 1000).toFixed(1)}s: all ${runningTasks.length} running task(s) ` +
         `started after the fixture write (startedAt=[${startedAts}])`
       );
+
+      // Brief settle: let the just-rolled task finish warming before specs fire.
+      console.log('[playground] Settling 15s for post-ready warmup...');
+      await new Promise((resolve) => setTimeout(resolve, 15_000));
+
       return;
     }
 

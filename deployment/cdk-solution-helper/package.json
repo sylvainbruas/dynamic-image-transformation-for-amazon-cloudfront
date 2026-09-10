@@ -37,7 +37,8 @@
     "diff@4": "4.0.4",
     "@babel/core": "7.29.6",
     "fast-uri@3": ">=3.1.4",
-    "js-yaml@3": "3.15.1"
+    "js-yaml@3": "3.15.2",
+    "js-yaml@4": "4.3.2"
   },
   "resolutions": {
     "semver": "7.5.4"

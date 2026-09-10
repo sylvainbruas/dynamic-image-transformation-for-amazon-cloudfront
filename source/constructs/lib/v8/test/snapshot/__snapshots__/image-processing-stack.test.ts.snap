@@ -529,7 +529,7 @@ exports[`ImageProcessingStack Snapshot Test 1`] = `
               },
               {
                 "Name": "SOLUTION_VERSION",
-                "Value": "v8.1.0",
+                "Value": "v8.1.1",
               },
               {
                 "Name": "DDB_TABLE_NAME",
@@ -1932,7 +1932,7 @@ async function handler(event) {
               ],
             },
             "SOLUTION_ID": "SO0023",
-            "SOLUTION_VERSION": "v8.1.0",
+            "SOLUTION_VERSION": "v8.1.1",
           },
         },
         "Handler": "index.handler",
