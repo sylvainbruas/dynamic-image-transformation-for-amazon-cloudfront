@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [8.1.1] - 2026-09-10
+
+### Security
+
+- Override `browserslist` to 4.28.8 to mitigate [CVE-2026-73088](https://avd.aquasec.com/nvd/cve-2026-73088) and [CVE-2026-73089](https://avd.aquasec.com/nvd/cve-2026-73089)
+- Bump `cypress` to 15.21.1 to drop the vulnerable transitive `extract-zip` dependency, mitigating [CVE-2026-56876](https://avd.aquasec.com/nvd/cve-2026-56876)
+- Override `qs` to 6.16.0 to mitigate [CVE-2026-82417](https://avd.aquasec.com/nvd/cve-2026-82417) and [CVE-2026-82562](https://avd.aquasec.com/nvd/cve-2026-82562)
+- Override `@humanfs/node` to 0.16.8 to mitigate [GHSA-p498-v437-472g](https://github.com/advisories/GHSA-p498-v437-472g)
+- Bump `@babel/core` to 7.29.6 to mitigate [CVE-2026-49356](https://avd.aquasec.com/nvd/cve-2026-49356)
+- Override `fflate` to 0.8.3 to mitigate [CVE-2026-45820](https://avd.aquasec.com/nvd/cve-2026-45820)
+- Bump `sharp` to 0.35.4 to mitigate the bundled `libheif` vulnerability [GHSA-rgj7-g3m4-5g8c](https://github.com/advisories/GHSA-rgj7-g3m4-5g8c)
+- Bump `morgan` to 1.12.0 to mitigate [CVE-2026-15603](https://avd.aquasec.com/nvd/cve-2026-15603)
+- Override `js-yaml` to 3.15.2 and 4.3.2 to mitigate [CVE-2026-84375](https://avd.aquasec.com/nvd/cve-2026-84375)
+- Bump `vitest` to 4.1.11 to mitigate [CVE-2026-84373](https://avd.aquasec.com/nvd/cve-2026-84373)
+
 ## [8.1.0] - 2026-08-31
 
 ### Added

@@ -18,7 +18,7 @@ describe("ManagementStack", () => {
 
   beforeEach(() => {
     process.env.SOLUTION_ID = "SO0023";
-    process.env.VERSION = "v8.1.0";
+    process.env.VERSION = "v8.1.1";
 
     app = new App();
     stack = new ManagementStack(app, "TestManagementStack", {

@@ -51,7 +51,7 @@
     "@middy/http-router": "^5.0.0",
     "@smithy/core": "^3.8.0",
     "metrics-utils": "file:../metrics-utils",
-    "sharp": "^0.35.0"
+    "sharp": "^0.35.4"
   },
   "overrides": {
     "minimatch@3": "3.1.5",
@@ -64,7 +64,10 @@
     "yaml@1": "1.10.3",
     "fast-uri": ">=3.1.4",
     "@babel/core": "7.29.6",
-    "js-yaml@3": "3.15.1"
+    "js-yaml@3": "3.15.2",
+    "browserslist": ">=4.28.7",
+    "fflate": "0.8.3",
+    "js-yaml@4": "4.3.2"
   },
   "resolutions": {}
 }
